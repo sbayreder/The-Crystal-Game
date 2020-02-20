@@ -1,0 +1,21 @@
+.display-4{
+    font-family: 'Black And White Picture', sans-serif;
+    text-align: center;
+    
+}
+.lead{
+    text-align: center;
+}
+
+.crystals{
+    text-align: center;
+    
+}
+
+.guessNum{
+    text-align: center;
+}
+
+#gem{
+    border-radius: 90px;
+}
