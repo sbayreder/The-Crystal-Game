@@ -2,10 +2,12 @@
     font-family: 'Black And White Picture', sans-serif;
     text-align: center;
     font-size: 100px;
-    color: rgb(30, 148, 184)
+    color:rgb(218, 79, 79)
 }
 .lead{
     text-align: center;
+    font-family: 'Indie Flower';
+    color: rgb(110, 200, 223);
 }
 
 .crystals{
@@ -15,8 +17,25 @@
 
 .targetNum{
     text-align: center;
+    font-family: 'Trade Winds';
+    color: white;
 }
 
-#gem{
+#gemB,#gemP,#gemG,#gemR{
     border-radius: 90px;
 }
+
+.winLoss{
+    text-align: center;
+    font-family: 'Trade Winds';
+    color: rgb(180, 207, 235);
+}
+
+img{
+    border-radius: 100px;
+}
+body, .jumbotron{
+    background-color: black;
+}
+
+    
