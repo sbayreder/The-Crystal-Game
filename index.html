@@ -1,46 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crystal Game</title>
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+And+White+Picture&display=swap" >
-    <link rel="stylesheet" href="assets\css\style.css">
-    <link rel="stylesheet" href="assets\css\reset.css">
 
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Black+And+White+Picture&display=swap"
+    />
+    <link rel="stylesheet" href="assets\css\style.css" />
+    <link rel="stylesheet" href="assets\css\reset.css" />
+  </head>
+  <body>
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 id= "main" class="display-4">Crystal Game</h1>
-          <p class="lead">Click on one of the crystals. Try to match the computers number.</p>
-        </div>
+      <div class="container">
+        <h1 id="main" class="display-4">Crystal Game</h1>
+        <p class="lead">
+          Click on one of the crystals. Try to match the computers number.
+        </p>
       </div>
+    </div>
 
-<div class="targetNum">
-    <h2 id="target">Target Number :<span id="tNum"></span></h2>
-    <br>
-    <h2 id="player">Player Score :<span id="pNum"></span></h2>
-</div>
-<br>
-<div class= "crystals">
-    <button id="gem"><img src="assets\images\Blue_Gem_Transparent_Image.png" alt="Blue Gem"></button>
-    <button id="gem"><img src="assets\images\Green_Diamond_Transparent_PNG_Clip_Art_Image.png" alt="Green Gem"></button>
-    <button id="gem"><img src="assets\images\Purple_Diamond_PNG_Clip_Art_Image-1908392122.png" alt="Purple Gem"></button>
-    <button id="gem"><img src="assets\images\Red_Crystal_Transparent_PNG_Clip_Art_Image.png" alt="Red Gem"></button>
-</div>
-<br>
+    <div class="targetNum">
+      <h2 id="target">Target Number :<span id="tNum"></span></h2>
+      <br />
+      <h2 id="player">Player Score :<span id="pNum"></span></h2>
+    </div>
+    <br />
+    <div class="crystals">
+      <button id="gemB">
+        <img
+          src="assets\images\Blue_Gem_Transparent_Image.png"
+          alt="Blue Gem"
+        />
+      </button>
+      <button id="gemG">
+        <img
+          src="assets\images\Green_Diamond_Transparent_PNG_Clip_Art_Image.png"
+          alt="Green Gem"
+        />
+      </button>
+      <button id="gemP">
+        <img
+          src="assets\images\Purple_Diamond_PNG_Clip_Art_Image-1908392122.png"
+          alt="Purple Gem"
+        />
+      </button>
+      <button id="gemR">
+        <img
+          src="assets\images\Red_Crystal_Transparent_PNG_Clip_Art_Image.png"
+          alt="Red Gem"
+        />
+      </button>
+    </div>
+    <br />
 
-<div class="winLoss">
-    <h2 id="win">Wins :</h2>
-    <br>
-    <h2 id="loss">Losses :</h2>
-</div>
+    <div class="winLoss">
+      <h2 id="win">Wins :</h2>
+      <br />
+      <h2 id="loss">Losses :</h2>
+    </div>
 
-
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="assets\javascript\game.js"></script>
-</body>
+  </body>
 </html>
