@@ -3,10 +3,9 @@ $(document).ready(function() {
   var wins = [];
   var loss = [];
   var counter = 0;
-
+  
   // random number generator
   var random = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
-  console.log(random);
   $("#tNum").text(random);
   
   //gem randomizer(repeat code for each gem)
@@ -20,7 +19,7 @@ $(document).ready(function() {
 	var gemsR = randomGenerator(12,1);
   $("#gemB").on("click", function() {
     counter += gemsB;
-    console.log(counter);
+      $('#player').text("Player Score :" + counter);
     if (counter > random) {
 			alert("You lost!!");
 			random = randomGenerator(120,19);
@@ -32,17 +31,18 @@ $(document).ready(function() {
 
   $("#gemG").on("click", function() {
     counter += gemsG;
-    console.log(counter);
+      $('#player').text("Player Score :" + counter);
 	});
 	$("#gemP").on("click", function() {
     counter += gemsP;
-    console.log(counter);
+      $('#player').text("Player Score :" + counter);
 	});
 	$("#gemR").on("click", function() {
     counter += gemsR;
-    console.log(counter);
+      $('#player').text("Player Score :" + counter);
+    $
   });
-
+  
 	$('#win').text("Wins :" + wins);
 	$('#loss').text("Loss :" + loss);
 });
