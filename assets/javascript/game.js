@@ -17,32 +17,69 @@ $(document).ready(function() {
 	var gemsG = randomGenerator(12,1);
 	var gemsP = randomGenerator(12,1);
 	var gemsR = randomGenerator(12,1);
-  $("#gemB").on("click", function() {
-    counter += gemsB;
+  $("#gemB").on("click", function() {    
+    counter += gemsB;    
       $('#player').text("Player Score :" + counter);
     if (counter > random) {
+      loss++;
+      
 			alert("You lost!!");
 			random = randomGenerator(120,19);
 			$("#tNum").text(random);
     } else if (counter == random) {
+      wins++;
       alert("You Win!!");
+      $('#win').text("Wins :" + wins);
+	
     }
   });
 
   $("#gemG").on("click", function() {
     counter += gemsG;
       $('#player').text("Player Score :" + counter);
+         if (counter > random) {
+           loss++;
+			alert("You lost!!");
+			random = randomGenerator(120,19);
+			$("#tNum").text(random);
+    } else if (counter == random) {
+      wins++;
+      alert("You Win!!");
+      $('#win').text("Wins :" + wins);
+	
+    }
 	});
 	$("#gemP").on("click", function() {
     counter += gemsP;
-      $('#player').text("Player Score :" + counter);
+    $('#player').text("Player Score :" + counter);
+    if (counter > random) {
+      loss++;
+			alert("You lost!!");
+			random = randomGenerator(120,19);
+			$("#tNum").text(random);
+    } else if (counter == random) {
+      wins++;
+      alert("You Win!!");
+      $('#win').text("Wins :" + wins);
+	
+    }
 	});
 	$("#gemR").on("click", function() {
     counter += gemsR;
-      $('#player').text("Player Score :" + counter);
-    $
+    $('#player').text("Player Score :" + counter);
+    if (counter > random) {
+      loss++;
+			alert("You lost!!");
+			random = randomGenerator(120,19);
+			$("#tNum").text(random);
+    } else if (counter == random) {
+      wins++;
+      alert("You Win!!");
+      $('#win').text("Wins :" + wins);
+	
+    }
+   
   });
   
-	$('#win').text("Wins :" + wins);
-	$('#loss').text("Loss :" + loss);
+	
 });
